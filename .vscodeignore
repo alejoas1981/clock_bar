@@ -1,0 +1,13 @@
+.vscode/**
+node_modules/**
+src/**
+tests/**
+test-results/**
+playwright-report/**
+.gitignore
+webpack.config.js
+tsconfig.json
+playwright.config.ts
+**/*.map
+**/*.ts
+!dist/**/*.ts

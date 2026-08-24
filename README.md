@@ -2,6 +2,9 @@
 
 A simple VS Code extension that displays the current time in terminal-style format (HH:MM:SS) in the status bar on the left side.
 
+<img width="352" height="29" alt="image" src="https://github.com/user-attachments/assets/e6fd18a5-ec7f-4622-a7a6-f7a5f3b11b37" />
+
+
 ## Features
 
 - Display time in HH:MM:SS format

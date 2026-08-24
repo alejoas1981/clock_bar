@@ -1,13 +1,13 @@
 import { defineConfig } from '@playwright/test';
 
 /**
- * Playwright configuration for functional tests.
+ * Playwright configuration for all tests.
  */
 export default defineConfig({
     /**
-     * Test directory containing functional tests.
+     * Test directory containing all tests.
      */
-    testDir: './tests/functional',
+    testDir: './tests',
 
     /**
      * Run tests in files in parallel.

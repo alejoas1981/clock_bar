@@ -8,6 +8,8 @@ playwright-report/**
 webpack.config.js
 tsconfig.json
 playwright.config.ts
+icon.ico
+ico.jpg
 **/*.map
 **/*.ts
 !dist/**/*.ts

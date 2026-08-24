@@ -3,14 +3,21 @@
   "displayName": "Terminal Clock",
   "description": "Simple clock in terminal style displayed in VS Code status bar",
   "version": "1.0.0",
-  "publisher": "your-publisher-name",
+  "publisher": "alejoas1981",
+  "author": {
+    "name": "Savchenko Aleksey",
+    "email": "alejoas1981@gmail.com"
+  },
+  "icon": "ico.png",
   "engines": {
-    "vscode": "^1.134.0"
+    "vscode": "^1.126.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": []
@@ -20,16 +27,16 @@
     "compile": "webpack --mode development",
     "watch": "webpack --watch --mode development",
     "package": "vsce package",
-    "test:unit": "mocha -r ts-node/register tests/unit/**/*.test.ts",
-    "test:functional": "playwright test",
-    "test": "npm run test:unit && npm run test:functional"
+    "test:unit": "playwright test tests/unit",
+    "test:functional": "playwright test tests/functional",
+    "test": "playwright test"
   },
   "devDependencies": {
     "@playwright/test": "^1.62.1",
     "@types/chai": "^5.2.3",
     "@types/mocha": "^10.0.10",
     "@types/node": "^26.3.0",
-    "@types/vscode": "^1.134.0",
+    "@types/vscode": "1.125.0",
     "@vscode/vsce": "^3.7.1",
     "chai": "^6.2.2",
     "mocha": "^11.8.0",
@@ -43,12 +50,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/terminal-clock.git"
+    "url": "https://github.com/alejoas1981/clock_bar.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/terminal-clock/issues"
+    "url": "https://github.com/alejoas1981/clock_bar/issues"
   },
-  "homepage": "https://github.com/your-username/terminal-clock#readme",
+  "homepage": "https://github.com/alejoas1981/clock_bar#readme",
   "keywords": [
     "clock",
     "time",
